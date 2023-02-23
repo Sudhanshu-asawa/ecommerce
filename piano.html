@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="stylesheet" href="substyles.css">
+</head>
+
+<body>
+    <div class="header">
+        <p>
+            World of Musical Instruments
+        </p>
+    </div>
+    <div class="body">
+        <div class="imgbar">
+            <img src="img/piano/51-uWJPV2iL._SL1101_.jpg" alt="" class="smallImg">
+            <img src="img/piano/51CdPelqHCL._SL1101_.jpg" alt="" class="smallImg">
+            <img src="img/piano/61FxSM9lTML._SL1102_.jpg" alt="" class="smallImg">
+            <img src="img/piano/61UYLY-qCnL._SL1101_.jpg" alt="" class="smallImg">
+            <img src="img/piano/61vjfWY5QOL._SL1101_.jpg" alt="" class="smallImg">
+        </div>
+        <div class="imgmain">
+            <img class="main" src="img/piano/piano.jpg" alt="">
+
+        </div>
+        <div class="text">
+            <div class="subtext">
+                <span style="font-weight: bolder; font-size: x-large;"> Casio CT-S200 Casiotone 61-Key Portable Keyboard
+                    (Red) </span>
+                <p style="font-size: large; color: rgb(54, 51, 51);">Price: 8091</p>
+                <h5 style="font-size: larger;">About this item</h5>
+                <ul style="font-size: large;">
+                    <li>A Beginner’s Slim & Stylish Keyboard available in 3 colours with 61 Piano Style Keys for those
+                        who’re looking to learn a musical instrument
+                    </li>
+                    <li>Incredibly easy to use with its big & clear LCD display & intuitive controls </li>
+                    <li>Equipped with 400 Tones & 77 Rhythms, the CT-S200 is an extremely versatile instrument with 13
+                        Indian Tones & 14 Indian Rhythms </li>
+                    <li>Register your favourite settings to easily recall tones and rhythms with the “My Setup” button
+                    </li>
+                    <li>Jam & Create your own musical composition by using the Dance Music Mode & add further effects
+                    </li>
+                    <li>CT-S 200 comes with a free adaptor (LAD-6) & can also be operated using batteries </li>
+                </ul>
+
+            </div>
+            <div class="counter">
+                <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                <input id="input" type="text" value="1">
+                <span class="up" onClick='increaseCount(event, this)'>+</span>
+            </div>
+            <button class="addtocart" onclick="myfunction()">
+                </i> ADD TO CART
+
+            </button>
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+    function increaseCount(a, b) {
+        var input = b.previousElementSibling;
+        var value = parseInt(input.value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        input.value = value;
+    }
+    function decreaseCount(a, b) {
+        var input = b.nextElementSibling;
+        var value = parseInt(input.value, 10);
+        if (value > 1) {
+            value = isNaN(value) ? 0 : value;
+            value--;
+            input.value = value;
+        }
+    }
+    function myfunction() {
+        
+        var input = document.getElementById("input")
+        if(input.value<1){
+            window.alert("Cart could not be Empty")
+        }
+        else{
+            location.href = "form.html";
+        }
+
+    }
+
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,94 @@
+body{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    
+}
+.header{
+    width: 98%;
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    padding: 1% 1% 1% 1%;
+}
+.body{
+    width: 100%;
+    display: flex;
+    margin: 2% 0% 2% 0%;
+}
+.body .imgbar{
+    display: flex;
+    flex-direction:column ;
+    width: 10%;
+    margin: 0% 2% 0% 2%;
+}
+.body .imgbar img{
+    width: 80%;
+    margin-top: 20%;
+
+    
+}
+.body .imgmain img{
+    max-width: 100%;
+}
+.body .imgmain{
+    padding-top: 5%;
+    width: 60%;
+    max-height: 550px;
+}
+.body .text{
+    width: 60%;
+}
+.body .subtext{
+    margin: 5% 20% 0% 3%;
+    width: 80%;
+}
+.body .text .counter {
+    width: 150px;
+    padding-left: 8.5%;
+    padding-top: 2%;
+    
+    display: flex;
+    
+}
+.body .text .counter input {
+    width: 50px;
+    border: 0;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background: #afaba4;
+    color: #000000;
+    appearance: none;
+    outline: 0;
+}
+.body .text .counter span {
+    display: block;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #28292b;
+    user-select: none;
+}
+
+
+.body .text .addtocart{
+  border-radius:100px;
+  border:none;
+  font-size:1em;
+  position:relative;
+  background:#2f343f;
+  color: antiquewhite;
+  cursor:pointer;
+  height:2em;
+  width:10em;
+  overflow:hidden;
+  /* transition:transform 0.1s; */
+  margin: 2% 0% 2% 6%;
+}
+
+.body .text .addtocart i{
+  margin-right:10px;
+}
+
+

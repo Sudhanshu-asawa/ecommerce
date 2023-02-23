@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <p>
+            World of Musical Instruments
+        </p>
+    </div>
+    <div class="form">
+        <form name="address" onsubmit=" return validateaddress()" method="post" action="index.html">
+            <fieldset>
+                <legend>Shipping Address</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input required type="text" id="name" name="name" autocomplete="name" enterkeyhint="next">
+                </div>
+                <div>
+                    <label for="mobile">Mobile no.</label>
+                    <input required type="text" id="mobile" name="mobile" autocomplete="mobile no" enterkeyhint="next">
+                </div>
+                <div>
+                    <label for="address">Street address</label>
+                    <input type="text" id="street" name="address" autocomplete="street-address" required
+                        enterkeyhint="next">
+
+                </div>
+                <div>
+                    <label for="postal">ZIP or postal code</label>
+                    <input required type="text" id="postal" name="postal" autocomplete="postal-code"
+                        enterkeyhint="next">
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input required type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next">
+                </div>
+                <div>
+                    <label for="country">Country or region</label>
+                    <input id="country" name="country" autocomplete="country" enterkeyhint="done" required>
+            </fieldset>
+            <input type="checkbox" id="check" name="check" onclick="copyBillingAddress()">
+            <label for="check" class="check"> Same as Shipping Address</label>
+
+            <fieldset>
+                <legend>Billing Address</legend>
+                <div>
+                    <label for="bname">Name</label>
+                    <input required type="text" id="bname" name="bname" autocomplete="name" enterkeyhint="next">
+                </div>
+                <div>
+                    <label for="bmobile">Mobile no.</label>
+                    <input required type="text" id="bmobile" name="bmobile" autocomplete="mobile no" enterkeyhint="next">
+                </div>
+                <div>
+                    <label for="baddress">Street address</label>
+                    <input type="text" id="bstreet" name="baddress" autocomplete="street-address" required enterkeyhint="next">
+
+                </div>
+                <div>
+                    <label for="bpostal">ZIP or postal code</label>
+                    <input required type="text" id="bpostal" name="bpostal" autocomplete="postal-code" enterkeyhint="next">
+                </div>
+                <div>
+                    <label for="bcity">City</label>
+                    <input required type="text" id="bcity" name="bcity" autocomplete="address-level2" enterkeyhint="next">
+                </div>
+                <div>
+                    <label for="bcountry">Country or region</label>
+                    <input id="bcountry" name="bcountry" autocomplete="country" enterkeyhint="done" required>
+
+            </fieldset>
+            <input class="button" type="submit" value="Place Your Order" name="Submit">
+    </div>
+    
+    </form>
+    
+</body>
+
+</html>

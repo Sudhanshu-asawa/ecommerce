@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutes</title>
+    <link rel="stylesheet" href="substyles.css">
+</head>
+
+<body>
+    <div class="header">
+        <p>
+            World of Musical Instruments
+        </p>
+    </div>
+    <div class="body">
+        <div class="imgbar">
+            <img src="img/flutes/flute.jpg" alt="" class="smallImg">
+            <img src="img/flutes/41cFAHR5+6L.jpg" alt="" class="smallImg">
+            <img src="img/flutes/41COxErxuLL.jpg" alt="" class="smallImg">
+            <img src="img/flutes/41xucO8ssLL.jpg" alt="" class="smallImg">
+            <img src="img/flutes/51Fmculir-L._SL1500_.jpg" alt="" class="smallImg">
+        </div>
+        <div class="imgmain">
+            <img class="main" src="img/flutes/flute1.jpg" alt="">
+
+        </div>
+        <div class="text">
+            <div class="subtext">
+                <span style="font-weight: bolder; font-size: x-large;">AIBANA Beginners Flutes C Natural Medium Right
+                    Hand 8 Hole Bansuri Musical Instrument Size 19inch 48
+                    cm (Brown) </span>
+                <p style="font-size: large; color: rgb(54, 51, 51);">Price: 2000</p>
+                <h5 style="font-size: larger;">About this item</h5>
+                <ul style="font-size: large;">
+                    <li>Excellent For Classical Music,Orchestral Playing, Studio Recording And Other Musical Effects
+                    </li>
+                    <li>Suitable For Beginners As Well As Professionals ,Made From High Quality Material, Designed For
+                        High
+                        Level Performance </li>
+                    <li>ey Note Or Scale: C,Has Good Frequency And Complex Tone ,Warm,Sweet And Seamless </li>
+                    <li>75 % Tune </li>
+                </ul>
+
+            </div>
+            <div class="counter">
+                <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                <input id="input" type="text" value="1">
+                <span class="up" onClick='increaseCount(event, this)'>+</span>
+            </div>
+            <button class="addtocart" onclick="MyFunction()">
+                ADD TO CART
+
+
+            </button>
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+    function increaseCount(a, b) {
+        var input = b.previousElementSibling;
+        var value = parseInt(input.value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        input.value = value;
+    }
+    function decreaseCount(a, b) {
+        var input = b.nextElementSibling;
+        var value = parseInt(input.value, 10);
+        if (value > 1) {
+            value = isNaN(value) ? 0 : value;
+            value--;
+            input.value = value;
+        }
+    }
+    function MyFunction() {
+        
+        var input = document.getElementById("input")
+        if(input.value<1){
+            window.alert("Cart could not be Empty")
+        }
+        else{
+            location.href = "form.html";
+        }
+
+    }
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar</title>
+    <link rel="stylesheet" href="substyles.css">
+</head>
+
+<body>
+    <div class="header">
+        <p>
+            World of Musical Instruments
+        </p>
+    </div>
+    <div class="body">
+        <div class="imgbar">
+            <img src="img/guitar/61o12Hvt7cL._SL1500_.jpg" alt="" class="smallImg">
+            <img src="img/guitar/715elCiMWRL._SL1500_.jpg" alt="" class="smallImg">
+            <img src="img/guitar/71dPErP3ngL._SL1500_.jpg" alt="" class="smallImg">
+            <img src="img/guitar/71Fh+MKSiPL._SL1500_.jpg" alt="" class="smallImg">
+            <img src="img/guitar/71QhMrqbyiL._SL1500_.jpg" alt="" class="smallImg">
+        </div>
+        <div class="imgmain">
+            <img class="main" src="img/guitar/guitar.jpg" alt="">
+
+        </div>
+        <div class="text">
+            <div class="subtext">
+                <span style="font-weight: bolder; font-size: x-large;">Juârez Acoustic Guitar, 38 Inch Cutaway, 038C
+                    with Bag, Strings, Pick and Strap, Black </span>
+                <p style="font-size: large; color: rgb(54, 51, 51);">Price: 2139</p>
+                <h5 style="font-size: larger;">About this item</h5>
+                <ul style="font-size: large;">
+                    <li>Black Glossy Finish, Number of Frets: 18, Acoustic Guitar with strap, Bag, Strings and 2 Picks
+                    </li>
+                    <li>Great looks with an innovative design to produce good quality sound </li>
+                    <li>Finger board: Linden Wood, Fretboard - Ebony Wood, Size: 38 inches, Cutaway</li>
+                    <li>Included components: Acoustic Guitar with strap, Bag, Strings and 2 Picks </li>
+                    <li>Linden Binding and Full Wood Construction with Geared Tuning, Wood Frame and Steel Strings</li>
+                </ul>
+
+            </div>
+            <div class="counter">
+                <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                <input id="input" type="text" value="1">
+                <span class="up" onClick='increaseCount(event, this)'>+</span>
+            </div>
+            <button class="addtocart" onclick="myfunction()">
+                ADD TO CART
+
+
+            </button>
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+    function increaseCount(a, b) {
+        var input = b.previousElementSibling;
+        var value = parseInt(input.value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        input.value = value;
+    }
+    function decreaseCount(a, b) {
+        var input = b.nextElementSibling;
+        var value = parseInt(input.value, 10);
+        if (value > 1) {
+            value = isNaN(value) ? 0 : value;
+            value--;
+            input.value = value;
+        }
+    }
+
+
+    function myfunction() {
+        
+        var input = document.getElementById("input")
+        if(input.value<1){
+            window.alert("Cart could not be Empty")
+        }
+        else{
+            location.href = "form.html";
+        }
+
+    }
+
+
+
+
+
+
+</script>
+
+</html>
